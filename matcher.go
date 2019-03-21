@@ -50,7 +50,7 @@ func (sml StringMatchList) MatchAny(s string) bool {
 	return false
 }
 
-// MatchMultipleAny indicates if any string passed matches anything in the list, returns false if
+// MatchAnyMultiple indicates if any string passed matches anything in the list, returns false if
 // sml or tests is empty
 func (sml StringMatchList) MatchAnyMultiple(tests []string) bool {
 	for _, s := range tests {

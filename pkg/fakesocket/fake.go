@@ -89,7 +89,7 @@ func (fpc *FakePacketConn) Read(b []byte) (int, error) {
 	return n, err
 }
 
-// WriteTo dummy impl.
+// Write dummy impl.
 // To satisfy net.Conn
 func (fpc *FakePacketConn) Write(b []byte) (int, error) {
 	return fpc.WriteTo(b, FakeAddr)
